@@ -1,0 +1,13 @@
+git config --global user.name nicoly-athayde
+git config --global user.email nicolyathayde4@gmail.com
+
+-- Verificar ambiente Angular
+node -v
+npm -v
+ng version
+
+-- Instalar o Angular
+npm install -g @angular/cli
+
+-- Criar um projeto angular
+ng new todo-angular --routing=false --style=css --dkip-tests --standalone --ssr=false --file-name-style-guuide=2025 --defaults
