@@ -9,5 +9,21 @@ ng version
 -- Instalar o Angular
 npm install -g @angular/cli
 
+-- Resolução de problemas
+npm config gwt prefix
+-- Copiar o caminho que o comando trouxe no Path das variáveis do sistema
+
 -- Criar um projeto angular
-ng new todo-angular --routing=false --style=css --dkip-tests --standalone --ssr=false --file-name-style-guuide=2025 --defaults
+ng new todo-angular --routing=false --style=css --skip-tests --standalone --ssr=false --file-name-style-guide=2025 --defaults
+
+-- Para executar o projeto
+cd todo-angular
+npm i
+ng serve --open
+
+-- Para criar componentes e serviços (n/ pode estar executando o projeto)
+ng generate component components/todo-form --skip-tests
+ng generate component components/todo-list --skip-tests
+ng generate component components/todo-item --skip-tests
+
+ng generate service services/todo-store --skip-tests
